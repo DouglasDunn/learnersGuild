@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+<meta name="description" content="Make-a-Word challenge for the Learners Guild Enrollment Game: https://learnathon.learnersguild.org/">
+    <meta charset="utf-8">
+    <title>Make a Word</title>
+
+    <link rel="stylesheet" href="css/main.css" media="screen" charset="utf-8">
+  </head>
+  <body class="container">
+    <div id="title-box">
+ <h1>Pseudo-scrabble</h1>
+      </div>
+    <div id="body-box">
+        <div class="row">
+    <div id="letters" class="big-mono">
+      OPMARGR
+    </div>
+
+          <div id="buttons">
+          <button type='default' id='shuffle' onclick='getLetters()'>Shuffle</button>
+    <button type='default' id='getNew' onclick='randomLetters()' style='inline'>New Letters</button>
+          </div>
+          </div>
+          <section id="guess-area">
+      <input type="text" id="word-guess">
+
+      <button onclick="checkGuess()">Guess</button>
+
+      <div id="game-message" class="notice">
+        Enter your first guess!
+      </div>
+            </div>
+
+    </section>
+  </body>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="app/app.js"></script>
+
+  <script type="text/javascript" src="https://rawgit.com/lg-bot/343694d651adedd80dfd458f20869f57/raw/39e5dba5b89cc9f48b9aa8ab6ec6f8bc78e34c03/tests.js"></script>
+</html>
